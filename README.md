@@ -78,7 +78,7 @@ python src/klega/main.py -i [INPUT_DIR] -f
 
 #### 4-2. Option 3: Typo Removal Function
 
-- The function was designed to process L2 Korean texts, which often contain spelling errors that could skew lexical diversity calculations. For example, a Korean learner might mistakenly spell '걸음' (walk) as '거름' (fertilizer), artificially inflating lexical diversity scores (The automatic typo removal function that we used in this code does not use context information, so it may not catch all misspelled words as we expected.)
+- The function was designed to process L2 Korean texts, which often contain spelling errors that could skew lexical diversity calculations. For example, a Korean learner might mistakenly spell '걸음' (walk) as '거름' (fertilizer), artificially inflating lexical diversity scores. (The automatic typo removal function that we used in this code does not use context information, so it may not catch all misspelled words as we expected.)
 
 
 ##### Turning off the typo removal function (for Mac and Linux)
