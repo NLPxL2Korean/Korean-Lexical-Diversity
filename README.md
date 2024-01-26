@@ -1,7 +1,5 @@
 ## Tool for the Korean lexical diversity analyser
 
-### Introduction
-
 The Korean lexical diversity analyzer is a python code to calculate lexical diversity indices in Korean texts. This project is built upon the foundation of existing open-source packages, which we greatly appreciate, and offers following key features:
 
 1. Lexical Diversity Calculation: Utilizes the [TAALED](https://lcr-ads-lab.github.io/TAALED/) package, developed by [Kristopher Kyle](https://kristopherkyle.github.io/professional-webpage/), for calculating lexical diversity indices.
@@ -16,6 +14,7 @@ The Korean lexical diversity analyzer is a python code to calculate lexical dive
 
     - Sung, H., Cho, S., & Kyle, K. (In press). Am empirical evaluation of lexical diversity indices in L2 Korean writing assessment, *Language Assessment Quarterly*.
 
+------------
 
 ### How to use this code
 
