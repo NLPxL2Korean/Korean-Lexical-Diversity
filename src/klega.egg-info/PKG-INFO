@@ -1,3 +1,18 @@
+Metadata-Version: 2.1
+Name: klega
+Version: 1.0.6
+Summary: Korean LExico-Grammatical Analyzer
+Home-page: https://github.com/hksyir/klega_lexdiv
+Author: Sooyeon Cho
+Author-email: sy.cho2321@gmail.com
+Project-URL: Bug Tracker, https://github.com/hksyir/klega_lexdiv
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
 ## Korean LExico-Grammatical Analyzer (KLEGA)
 
 A Korean lexical diversity analyzer with following features:

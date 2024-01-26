@@ -1,0 +1,16 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+src/klega/__init__.py
+src/klega/data_processor.py
+src/klega/data_reader.py
+src/klega/korean_tokenizer.py
+src/klega/ld_analyser.py
+src/klega/main.py
+src/klega/util.py
+src/klega/web.py
+src/klega.egg-info/PKG-INFO
+src/klega.egg-info/SOURCES.txt
+src/klega.egg-info/dependency_links.txt
+src/klega.egg-info/top_level.txt
