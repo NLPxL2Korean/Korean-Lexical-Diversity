@@ -2,13 +2,13 @@
 
 The Korean lexical diversity analyzer is a python code to calculate lexical diversity indices in Korean texts. This project is built upon the foundation of existing open-source packages, which we greatly appreciate, and offers following key features:
 
-1. Lexical Diversity Calculation: Utilizes the [TAALED](https://lcr-ads-lab.github.io/TAALED/) package, developed by [Kristopher Kyle](https://kristopherkyle.github.io/professional-webpage/), for calculating lexical diversity indices.
+1. Lexical diversity calculation: Utilizes the [TAALED](https://lcr-ads-lab.github.io/TAALED/) package, developed by [Kristopher Kyle](https://kristopherkyle.github.io/professional-webpage/), for calculating lexical diversity indices.
 
 2. Typo correction: Utilizes the [Pywin32](https://github.com/mhammond/pywin32) package to automatically remove typos from raw texts (especially from second language [L2] Korean learners). (*Note*: This feature is only available on Windows.)
 
-3. Text Tokenization: Integrates [konlpy](https://konlpy.org/en/latest/) or [stanza](https://stanfordnlp.github.io/stanza/tokenize.html) for tokenizing Korean texts before calculating lexical diversity indices. Considering that Korean is an **agglutinative language**, where the tokenization approach significantly impacts the results.
+3. Tokenization: Integrates [konlpy](https://konlpy.org/en/latest/) or [stanza](https://stanfordnlp.github.io/stanza/tokenize.html) for tokenizing Korean texts before calculating lexical diversity indices. Considering that Korean is an **agglutinative language**, where the tokenization approach significantly impacts the results.
 
-4. Morpheme POS Tagging: Offers an option to calculate lexical diversity including only content morphemes or both content and function morphemes. This feature leverages morpheme Part-Of-Speech (POS) tag information from the [konlpy](https://konlpy.org/en/latest/) package.
+4. Morpheme POS tagging: Offers an option to calculate lexical diversity including only content morphemes or both content and function morphemes. This feature leverages morpheme Part-Of-Speech (POS) tag information from the [konlpy](https://konlpy.org/en/latest/) package.
 
 5. This code is associated with the following paper, which will provide you detailed information about the theoretical background of lexical diversity indices and their application in L2-Korean (writing) assessment:
 
