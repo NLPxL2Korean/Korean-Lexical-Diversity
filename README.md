@@ -1,6 +1,6 @@
 ## Tool for the Korean lexical diversity analyser
 
-The Korean lexical diversity analyzer is a python code to calculate lexical diversity indices in Korean texts. This project is built upon the foundation of existing open-source packages, which we greatly appreciate, and offers following key features:
+This python based Korean lexical diversity analyzer calculates lexical diversity indices in Korean texts. This project is built upon the foundation of existing open-source packages, which we greatly appreciate, and offers following key features:
 
 1. Lexical diversity calculation: Utilizes the [TAALED](https://lcr-ads-lab.github.io/TAALED/) package, developed by [Kristopher Kyle](https://kristopherkyle.github.io/professional-webpage/), for calculating lexical diversity indices.
 
@@ -48,7 +48,7 @@ pip install -r requirements.txt
 python src/klega/main.py -i [INPUT_DIR]
 ```
 
-- This will process your texts in your ```INPUT_DIR``` using (default) ```okt``` tokenizer and save the output in the ```result``` directory, processing contents words only. ```[INPUT_DIR]``` must be a directory where all the text files to process are stored.  
+- This will process your texts in your ```INPUT_DIR``` using (default) ```okt``` tokenizer and save the output in the ```result``` directory, processing contents words only. ```[INPUT_DIR]``` must be a directory where all the text files to process are stored. (e.g. `data/`, refer Section `1. Input`) 
 
 #### 4-1. Option 1: Tokenizers
 
@@ -58,20 +58,21 @@ python src/klega/main.py -i [INPUT_DIR]
 python src/klega/main.py -i [INPUT_DIR] -t okt mecab
 ```
 - Currently available tokenizers are: ```okt``` ```mecab``` ```hannanum``` ```komoran``` ```kkma``` ```stanza```.
-- Each tokenizer has different tokenizting options and different morphenme POS tags, which might affect the lexical diversity calculations. See [Korean POS tags comparison chart](https://docs.google.com/spreadsheets/d/1OGAjUvalBuX-oZvZ_-9tEfYD2gQe7hTGsgUpiiBSXI8/edit#gid=0) (provided from the [konlpy](https://konlpy.org/en/latest/) documentation page).
+- Each tokenizer has different tokenizting options and different morpheme POS tags, which might affect the lexical diversity calculations. See [Korean POS tags comparison chart](https://docs.google.com/spreadsheets/d/1OGAjUvalBuX-oZvZ_-9tEfYD2gQe7hTGsgUpiiBSXI8/edit#gid=0) (provided from the [konlpy](https://konlpy.org/en/latest/) documentation page).
 
 #### 4-2. Option 2: Processing functional words
 
-- To process ONLY content morphemes (after the morphemes are automatically tagged by the selected tokenizer):
-
-```
-python src/klega/main.py -i [INPUT_DIR]
-```
 
 - To process both content morphemes and functional morphemes (after the morphemes are automatically tagged by the selected tokenizer), , add ```-f``` flag in the command:
 
 ```
 python src/klega/main.py -i [INPUT_DIR] -f
+```
+
+- To process ONLY content morphemes (after the morphemes are automatically tagged by the selected tokenizer), simply drop the ```-f``` flag:
+
+```
+python src/klega/main.py -i [INPUT_DIR]
 ```
 
 - *Note*: For ```stanza``` tokenizer, ```-f``` must be always added. ```stanza``` does not have an option to extract content words only.
@@ -148,4 +149,4 @@ If you use this code in your research, please cite the following paper:
 ---------------
 
 Please create a GitHub issue if you have any questions or bug-reports.  
-Email to the writers: [Sooyeon Cho](mailto:sooyeon.cho@uzh.ch) & [Hakyung Sung](mailto:hsung@uoregon.edu)
+Email to the writers: [Sooyeon Cho](mailto:sy.cho2321@gmail.com) & [Hakyung Sung](mailto:hsung@uoregon.edu)
