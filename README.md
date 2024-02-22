@@ -11,9 +11,7 @@ This python based Korean lexical diversity analyzer calculates lexical diversity
 4. Morpheme POS tagging: Offers an option to calculate lexical diversity including only content morphemes or both content and function morphemes. This feature leverages morpheme Part-Of-Speech (POS) tag information from the [konlpy](https://konlpy.org/en/latest/) package.
 
 5. This code is associated with the following paper, which will provide you detailed information about the theoretical background of lexical diversity indices and their application in L2-Korean (writing) assessment:
-
-    - Sung, H., Cho, S., & Kyle, K. (In press). Am empirical evaluation of lexical diversity indices in L2 Korean writing assessment, *Language Assessment Quarterly*.
-
+    - Sung, H., Cho, S., & Kyle, K. (2024). <a href="https://doi.org/10.1080/15434303.2024.2311728" target="_blank">An empirical evaluation of lexical diversity indices in L2 Korean writing assessment</a>, *Language Assessment Quarterly*, 1-22.
 ------------
 
 ### How to use this code
@@ -138,9 +136,7 @@ After a successful run, three types of output files are generated: (1) logfile, 
 
 ### Citation
 
-If you use this code in your research, please cite the following paper:
-
-- Sung, H., Cho, S., & Kyle, K. (In press). Am empirical evaluation of lexical diversity indices in L2 Korean writing assessment, *Language Assessment Quarterly*.
+If you use this code in your research, please cite the following paper: Sung, H., Cho, S., & Kyle, K. (2024). <a href="https://doi.org/10.1080/15434303.2024.2311728" target="_blank">An empirical evaluation of lexical diversity indices in L2 Korean writing assessment</a>, *Language Assessment Quarterly*, 1-22.
 
 
 ### License
