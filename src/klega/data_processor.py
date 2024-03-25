@@ -1,11 +1,20 @@
 import logging
 
-import win32com.client
 import os
 import codecs
 import re
 import pandas as pd
+import importlib.util
 from util import current_time_as_str
+
+
+def import_win32com_client():
+    try:
+        import win32com.client
+        print("pywin32 is successfully imported. Typo removal function is enabled.")
+    except ImportError:
+        print("pywin32 is not installed. Typo removal function is disabled.")
+
 
 
 def typodelete(txt_id, txt_list, output_dir, save=True):
