@@ -1,5 +1,4 @@
 konlpy
-pywin32
 pandas
 stanza
 taaled
