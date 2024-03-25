@@ -7,6 +7,7 @@ import warnings
 import numpy as np
 import pandas as pd
 import sys
+import os
 
 from util import current_time_as_str
 
@@ -33,6 +34,11 @@ if __name__ == '__main__':
     parser.add_argument("-o", "--outputdir", default='result', help="path to store output files (log, tsv files with ld values")
     parser.add_argument("-no-typo-removal", "--notyporemoval", action='store_true', help="Note: Windows OS with Microsoft Office is required for this function.")
     args = parser.parse_args()
+
+
+    # if output dir does not exist, make a new directory
+    if not os.path.exists(args.outputdir):
+        os.makedirs(args.outputdir)
 
 
     # set logger
