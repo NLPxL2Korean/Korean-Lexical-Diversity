@@ -35,7 +35,7 @@ pip install -r requirements.txt
 ```
 pip install pywin32
 ```
-- Other OS: The typo removal function is currently available only on Windows environment with Microsoft Office installed. To be able to execute the code on other OS environments, the typo removal function must be off by using the flag ```no-typo-removal```. Refer below for the usage.
+- Other OS: The typo removal function is currently available only on Windows environment with Microsoft Office installed. To be able to execute the code on other OS environments, the typo removal function must be off by using the flag ```-no-typo-removal```. Refer below for the usage.
 
 #### 2. Input
 
