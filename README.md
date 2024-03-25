@@ -16,27 +16,33 @@ This python based Korean lexical diversity analyzer calculates lexical diversity
 
 ### How to use this code
 
-#### 1. Input
+#### 1. Installation / Setup
+
+##### Required Setup
+Install the required packages using:
+```
+pip install -r requirements.txt
+```
+
+##### Optional Setup: `Mecab` tokenizer (only available on Windows)
+- For using `Mecab` tokenizer optionally, follow this instruction to install the package:
+    - [Korean](https://uwgdqo.tistory.com/363)
+    - [English (translated)](https://uwgdqo-tistory-com.translate.goog/363?_x_tr_sl=ko&_x_tr_tl=en&_x_tr_hl=ko&_x_tr_pto=wapp)
+    - Default Mecab path in the source code is set to: `C:/mecab/mecab-ko-dic`. You can change the path in the source code directly if you installed Mecab in a different path: see [Source Code](https://github.com/hksyir/klega_lexdiv/blob/2e0d1a8b8bf03abfdbce62d445ce03d7a45fcf09/src/korean_tokenizer.py#L)
+
+##### Optional Setup: Typo removal function (only available on Windows)
+- Window OS: For enabling typo removal function, install the necessary package additionally:
+```
+pip install pywin32
+```
+- Other OS: The typo removal function is currently available only on Windows environment with Microsoft Office installed. To be able to execute the code on other OS environments, the typo removal function must be off by using the flag ```no-typo-removal```. Refer below for the usage.
+
+#### 2. Input
 
 The Korean texts for analyzing the lexical diversity must be in plain text files with the extension ```.txt```.
 You can process multiple files, which are stored in one ```data``` directory.  
 e.g. ```data/text1.txt``` ```data/text2.txt``` ```data/text3.txt```
 
-#### 2. Installation
-
-- Install the required packages using:
-```
-pip install -r requirements.txt
-```
-
-- `Mecab` Tokenizer Installation (Optional, only available in Windows)
-    - Follow this instruction to install Mecab: 
-        - [Korean](https://uwgdqo.tistory.com/363)
-        - [English (translated)](https://uwgdqo-tistory-com.translate.goog/363?_x_tr_sl=ko&_x_tr_tl=en&_x_tr_hl=ko&_x_tr_pto=wapp)
-- Default Mecab path in the source code is set to: `C:/mecab/mecab-ko-dic`
-- You can change the path in the source code directly if you installed Mecab in a different path: see [Source Code](https://github.com/hksyir/klega_lexdiv/blob/2e0d1a8b8bf03abfdbce62d445ce03d7a45fcf09/src/korean_tokenizer.py#L)
-
-*Note*: The typo removal function is available only on Windows environment with Microsoft Office installed. To be able to execute the code on other OS environments, the typo removal function must be off by using the flag ```no-typo-removal```. Refer below for the usage.
 
 #### 3. Execution: Commands and options
 
