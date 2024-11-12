@@ -134,9 +134,9 @@ After a successful run, three types of output files are generated: (1) logfile, 
 - *Note*: For more information about each index, please refer to the original [TAALED documentation](https://lcr-ads-lab.github.io/TAALED/). Caution is advised as some indices require stability in text length!
 
 
-### Web Demo
+### Colab Notebook
 
-- We included a [web demo version](http://sooyeoncho.pythonanywhere.com) of **K**orean **LE**xico(-**G**rammatical) diversity **A**nalyzer (**KLEGA**), which you can play with a bit. This tool is currently optimized for the Chrome browser on PC.
+- Start your analysis easily with this Colab [Notebook](https://colab.research.google.com/drive/1EpN0cZPa46kLzKgeXWDnOSCa3CxwfnHa?usp=sharing).
 
 -----------
 
