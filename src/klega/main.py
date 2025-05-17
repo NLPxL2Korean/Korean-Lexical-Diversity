@@ -11,7 +11,7 @@ import os
 
 from util import current_time_as_str
 
-warnings.filterwarnings("ignore", category=np.VisibleDeprecationWarning)
+warnings.filterwarnings("ignore", category=DeprecationWarning)
 logging.basicConfig(level=logging.INFO)
 logging.getLogger("tensorflow").setLevel(logging.CRITICAL)
 logging.getLogger("stanza").setLevel(logging.WARNING)
