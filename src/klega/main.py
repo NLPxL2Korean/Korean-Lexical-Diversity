@@ -14,7 +14,9 @@ from util import current_time_as_str
 warnings.filterwarnings("ignore", category=DeprecationWarning)
 logging.basicConfig(level=logging.INFO)
 logging.getLogger("tensorflow").setLevel(logging.CRITICAL)
+logging.getLogger("urllib3").setLevel(logging.WARNING)
 logging.getLogger("stanza").setLevel(logging.WARNING)
+logging.getLogger("stanza.pipeline").setLevel(logging.WARNING)
 
 if __name__ == '__main__':
     # parse args
