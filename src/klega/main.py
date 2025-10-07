@@ -10,7 +10,7 @@ import sys
 import os
 
 from util import current_time_as_str
-
+warnings.filterwarnings("ignore", message="Creating an ndarray from ragged nested sequences")
 logging.basicConfig(level=logging.INFO)
 logging.getLogger("tensorflow").setLevel(logging.CRITICAL)
 logging.getLogger("urllib3").setLevel(logging.WARNING)
