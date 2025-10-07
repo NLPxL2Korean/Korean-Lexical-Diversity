@@ -2,4 +2,4 @@ konlpy
 pandas
 stanza
 taaled
-numpy
+numpy==1.26.4
